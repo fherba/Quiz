@@ -11,3 +11,9 @@ exports.answer = function (req, res) {
         res.render ("quizes/answer", { respuesta: "Correcto" });
     else res.render ("quizes/answer", { respuesta: "Incorrecto" });
 };
+
+//GET /author
+
+exports.credits = function (req, res) {
+    res.render ("author", { autor: "Francisco Herba" });
+};
